@@ -1,0 +1,532 @@
+* { /* CSS Reset */
+    margin: 0 auto;/* 画面中央に表示 */
+    padding: 0;
+    box-sizing: border-box; /* 要素の幅にpaddingとborderを含める */
+}
+
+*::after, *::before { 
+    box-sizing: inherit; /* 親要素のbox-sizingを継承 */
+}
+
+body {
+    line-height: 1; /* 行間 */
+    background-color: var(--main);
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+:root,
+html {
+    --main: #FFD610;
+    --sub: #3047ad;
+    --text: #242424;
+    --white: #fff;
+    scroll-behavior: smooth;
+}
+
+p {
+    line-height: 2rem;
+}
+
+#home {
+    height: 100vh;
+}
+.container {
+    opacity: 0;
+    transform: translateY(100);
+}
+.container.active {
+    transition: 3s;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 初期状態 */
+.logo-img {
+    transition: transform 0.3s ease;
+  }
+  
+  /* ホバー時 */
+  .logo-img:hover {
+    transform: translateY(-5px); /* 少し上にはねる */
+  }
+
+
+
+
+#home .slideshow-items {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+
+.parallax-bg {
+    box-sizing: border-box;
+    color: #FFF;
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 5%;
+}
+header .ph_area_top,
+header .sample {
+    width: 100%;
+    height: 30%;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--main);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#top-logo {
+    background-color: var(--main);
+    background-size: 50%;
+    background-position: 50%;
+}
+
+
+header .top-view {
+    margin-left: 25%;
+    padding-top: 100px;
+    text-align: center;
+}
+header .logo-img {
+    position: fixed;
+}
+@media screen and (max-width: 768px) {
+    header .logo-img {
+        margin: 13px -26px;
+    }
+}
+@media screen and (min-width: 768px) { /* 768px以上の場合 */
+    
+    header .logo-img {
+        margin: 12px 30px 30px 0;
+        width: 13%;
+        position: fixed;
+        z-index: 100002;
+    }
+header .ph_area {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#header {
+    position: relative;
+    height: 100vh;
+}
+}
+
+
+  #top {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    background-size: cover;
+    background-position: center -14vh;
+    background-repeat: no-repeat;
+  }
+  
+
+
+
+
+
+@media screen and (max-width: 768px){/* 768px以下の場合 */
+    .item-header img {
+        width: 27vw;
+    }
+}
+@media screen and (max-width: 1050px) {/* 1050px以下の場合 */
+    .item-header img {
+        width: 22vw;
+    }
+    header .top-view {
+        margin-left: 0;
+        margin-top: 0;
+        padding-top: 120px;
+    }
+    header .top-view img {
+        width: 90%;
+    }
+}
+
+.item-header img {
+    width: 18vw;
+    height: auto;
+}
+
+#about {
+    margin-top: 70px;
+    padding: 46px 0 0;
+    position: relative;
+    height: 230vh;
+}
+#about img {
+    position: absolute;
+    top: 30%;
+    right: 53px;
+}
+#about .text {
+    background: var(--white);
+    border-radius: 0 50px 50px 0;
+    padding: 90px 40px;
+    text-align: left;
+    margin-right: 8vw;
+    width: calc(100% - 8vw);
+    height: 95vh;
+    padding-left: calc(8vw + 15px);
+}
+h1 {
+    font-size: 2.3rem;
+    padding-bottom: 2.3rem;
+    /*font-family: 'M PLUS Rounded 1c', sans-serif;*/
+}
+h2 {
+    font-size: 1.3rem;
+    padding-bottom: 2.3rem;
+}
+@media (768px < width) {
+    #about {
+        height: 180vh;
+    }
+    #about .text {
+        background: var(--white);
+        border-radius: 50px;
+        margin: 0 auto;
+        width: calc(100% - 8vw);
+        height: 60vh;
+    }
+    #about img {
+        width: 19%;
+        top: 22%;
+    }
+}
+
+#works {
+    margin-top: 70px;
+    padding: 46px 0 0;
+    position: relative;
+}
+
+#works .content-work{
+    border-radius: 50px 0 0 50px;
+    background-color: var(--white);
+    width: calc(100% - 8vw);
+    padding: 70px 0 0;
+    margin: 0 auto;
+    margin-left: 8vw;
+}
+
+
+#works ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 10px 90px;
+}
+#works li {
+    width: calc(100% - 20px);
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 0 10px 5px #ececec;
+    margin: 40px 20px;
+}
+#works li img{
+    width: 100%;
+}
+#works li img:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+footer .slider a {
+    text-decoration: none;
+}
+#works li .gallery-text,
+footer .slider p {
+    padding: 20px 12px;
+    font-size: .9em;
+    color: var(--gray);
+}
+#works a {
+    display: block;
+    pointer-events: initial;
+    height: 100%;
+    text-decoration: none;
+}
+#works .text {
+    background: var(--white);
+    border-radius: 50px 50px 0;
+    padding: 40px;
+    text-align: left;
+    /*margin-right: 8vw;
+    width: calc(100% - 8vw);*/
+    height: 35vh;
+    padding-left: calc(8vw + 15px);
+}
+@media (550px < width < 767px) {
+    /* 画面幅が767px以下（767pxから600px）の場合に適用されるスタイル */
+    #works ul {
+      padding: 20px 80px 90px;
+    }
+  }
+@media (768px < width) {
+    #works .content-work {
+        border-radius: 50px;
+        background-color: var(--white);
+        width: calc(100% - 8vw);
+        padding: 70px 0 0;
+        margin: 0 auto;
+    }
+    #works ul {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px 50px 120px;
+    }
+    #works li {
+        width: calc(33.3333% - 40px);
+    }
+}
+
+
+#skill {
+    margin-top: 190px;
+    padding: 115px 0 0;
+    position: relative;
+    border-radius: 50px;
+}
+#skill .content-skill {
+    background: var(--white);
+    border-radius: 0 50px 50px 0;
+    padding: 25px 40px 90px 150px;
+    text-align: left;
+    margin-right: 8vw;
+    width: calc(100% - 8vw);
+    padding-left: calc(8vw + 15px);
+    margin-bottom: 50px;
+}
+#skill .text {
+    border-radius: 50px 50px 0;
+    padding: 25px 40px 90px 150px;
+    text-align: left;
+    margin-right: 8vw;
+    width: calc(100% - 8vw);
+    height: 35vh;
+    padding-left: calc(8vw + 15px);
+    margin-bottom: 50px;
+}
+#skill .skill-nav {
+    width: 90%;
+}
+
+@media (768px < width) {
+    #skill .content-skill {
+        border-radius: 50px;
+        background-color: var(--white);
+        width: calc(100% - 8vw);
+        padding: 70px 0;
+        margin: 0 auto;
+    }
+    #skill .text {
+        border-radius: 50px 50px 0;
+        padding: 25px 40px 90px 150px;
+        text-align: left;
+        margin-right: 8vw;
+        width: calc(100% - 8vw);
+        height: 35vh;
+        padding-left: calc(8vw + 15px);
+        margin-bottom: 0;
+    }
+    #skill .skill-nav {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 50px 50px;
+    }
+    #skill ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #skill li {
+        width: 100%;
+        height: 200px;
+        padding: 10px 0;
+        margin: 0;
+    }
+    button {
+        height: 100px;
+        width: 200px;
+    }
+    .accordion-002 {
+        width: calc(50% - 20px);
+        margin: 10px;
+    }
+}
+.accordion-002 summary {
+    position: relative;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0.8em 3em;
+    background-color: #e3364a;
+    box-shadow: 0 5px 0 #ca1c30;
+    border-radius: 60px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s;/*アニメーションの時間を0.3秒に設定*/
+    margin-top: 40px;
+}
+
+.accordion-002 summary::-webkit-details-marker {
+    display: none;
+}
+.accordion-002 summary:hover {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+.accordion-002 summary:active {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+.accordion-002 p {
+    transform: translateY(-10px);
+    opacity: 0;
+    margin: 0;
+    padding: 2em 0;
+    color: #333333;
+    transition: transform .5s, opacity .5s;
+}
+
+.accordion-002[open] p {
+    transform: none;
+    opacity: 1;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 60px;
+    margin-top: 100px;
+    position: relative;
+    color: var(--white);
+}
+@media (768px < width) {
+    footer {
+        text-align: right;
+    }
+}
+
+.logo-img {
+    width: 100px;
+    position: absolute;
+    top: 0px;
+    left: 32px;
+    z-index: 100000;
+}
+
+
+
+
+/* 経歴表 */
+  .history {
+    position: relative;
+    margin: 100px auto;
+    padding: 0 15px;
+  }
+  .history:before {
+    content: "";
+    width: 13px;
+    height: 100%;
+    background: var(--white);
+    position: absolute;
+    transform: translateX(-50%);
+    border-radius: 50px;
+    left: 18%;
+  }
+  @media only screen and (min-width: 768px) {
+    .history {
+      width: 100%;
+      margin: 170px auto;
+    }
+    .history:before {
+        left: 25%;
+        width: 14px;
+    }
+  }
+  .history__item {
+    position: relative;
+    display: flex;
+    padding: 0 0 35px 20px;
+  }
+  @media only screen and (min-width: 768px) {
+    .history__item {
+      padding: 0;
+    }
+    .history__item:nth-of-type(2n) {
+      justify-content: flex-end;
+    }
+  }
+  .history__item:before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    background: var(--white);
+    position: absolute;
+    border-radius: 50%;
+    left: 15.2%;
+    transform: translateX(-50%);
+  }
+  @media only screen and (min-width: 768px) {
+    .history__item:before {
+      left: 24.1%;
+      top: 38px;
+      width: 30px;
+      height: 30px;
+    }
+  }
+  .history__item:last-child {
+    padding-bottom: 15px;
+  }
+  @media only screen and (min-width: 768px) {
+    .history__item:last-child {
+      padding-bottom: 0;
+    }
+  }
+  .history__inner {
+    max-width: 56%;
+    margin-left: 30%;
+  }
+  .history__image {
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+  }
+  .history__image img {
+    box-shadow: 0 0 15px rgba(30, 29, 29, 0.33);
+    display: block;
+  }
+  .history__text {
+    padding-top: 10px;
+    letter-spacing: 0.05em;
+  }
+  @media only screen and (min-width: 768px) {
+    .history__text {
+        margin: 30px 0;
+    }
+  }
+  

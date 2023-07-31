@@ -3,9 +3,269 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>OZEKI-portfolio</title>
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/humberger.css">
+    <script src="js/humberger.js" defer></script>
 </head>
 <body>
-    <h1>test</h1>
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;800;900&display=swap" rel="stylesheet">
+    
+    
+    <!-- header -->
+    <header id="head">
+        <div class="home-anime">
+            <div class="cage">
+                <div class="box">
+                    <div class="drop-one">
+                    </div>
+                    <div class="drop-two">
+                    </div>
+                    <div class="ripple l-side">
+                    </div>
+                    <div class="ripple r-side">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="cage two">
+                <div class="box">
+                    <div class="drop-three">
+                    </div>
+                    <div class="drop-four">
+                    </div>
+                </div>
+            </div>
+    
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="">
+                <defs>
+                    <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="15" result="blur" />
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                        <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+                    </filter>
+                </defs>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="">
+                <defs>
+                    <filter id="goo2">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+                        <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+                    </filter>
+                </defs>
+            </svg>
+            </div>
+        <div class="my-icon">
+            <a href="#head">
+                <img src="img/my-icon.png" alt="ロゴ" class="logo-img">
+            </a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="globalMenuSp">
+            <ul>
+                <div class="hamburger-text">
+                    <li><a href="#head">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#works">WORKS</a></li>
+                    <li><a href="#skill">SKILL</a></li>
+                </div>
+            </ul>
+        </nav>
+        <!--<section id="header" class="container">
+            <div id="top" class="ph_area">
+            </div>
+            <div class="sample"></div>
+            <div id="top-logo" class="ph_area_top">
+            </div>
+        </section>-->
+        <div class="top-view">
+            <img src="img/top-view.png" alt="トップ画面" width="100%">
+        </div>
+    </header>
+        
+    
+    <!-- home -->
+    <section class="container" id="home">
+        
+    </section>
+    
+
+
+    <!-- about -->
+    <section class="container" id="about">
+        <!--<img src="img/uzu-icon.png" alt="ロゴ" width="25%" class="logo-img">-->
+        <div class="text">
+            <h1>ABOUT</h1>
+            <h2>- 私のこと -</h2>
+
+            <p>
+                はじめまして。当ポートフォリオサイトをご訪問頂き、誠にありがとうございます。
+                <br>岐阜出身、今年で20歳です。
+                <br>webデザインの勉強をして4ヶ月ほどです。
+            </p>
+        </div>
+        <div class="effect-x-bg1">
+            <div class="bg-in">
+            </div>
+        </div>
+        <img src="img/my-icon.png" alt="アイコン" width="50%">
+
+
+        <div class="history">
+            <div class="history__item">
+              <div class="history__inner">
+                <div class="history__text">
+                  <h2>-2022年 3月</h2><p>高校卒業</p>
+                </div>
+              </div>
+            </div>
+            <div class="history__item">
+              <div class="history__inner">
+                <div class="history__text">
+                    <h2>-2022年 4月</h2><p>大学入学</p>
+                </div>
+              </div>
+            </div>
+            <div class="history__item">
+              <div class="history__inner">
+                <div class="history__text">
+                    <h2>-2022年 9月</h2><p>東京ゲームショー出展</p>
+                </div>
+              </div>
+            </div>
+            <div class="history__item">
+              <div class="history__inner">
+                <div class="history__text">
+                    <h2>-2022年</h2><p>テキスト</p>
+                </div>
+              </div>
+            </div>
+            <div class="history__item">
+              <div class="history__inner">
+                <div class="history__text">
+                    <h2>-2022年</h2><p>テキスト</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </section>
+
+    <!-- works -->
+    <section class="container" id="works">
+        <!--<img src="img/uzu-icon.png" alt="ロゴ" width="25%" class="logo-img">-->
+            <div class="content-work">
+                <div class="text">
+                    <h1>WORKS</h1>
+                    <h2>- 制作実績 -</h2>
+                    <p>2022年-2023年にかけて作った作品を紹介します。</p>
+                </div>
+                <nav>
+                <ul>
+                    <li>
+                        <a href="works01.html">
+                            <img src="img/work01.jpeg" alt="写真01">
+                            <p class="gallery-text">一年作品</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="works02.html">
+                            <img src="img/work02.jpeg" alt="写真02">
+                            <p class="gallery-text">CGロボット</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="works03.html">
+                            <img src="img/work03.png" alt="写真03">
+                            <p class="gallery-text">デッサン</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="works04.html">
+                            <img src="img/work04.jpeg" alt="写真04">
+                            <p class="gallery-text">ポスター</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/work05.png" alt="写真05">
+                            <p class="gallery-text">作品5</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/sample.png" alt="写真06">
+                            <p class="gallery-text">作品6</p>
+                        </a>
+                    </li>
+                </ul>
+                </nav>
+            </div>
+
+    </section>
+
+    <!-- skill -->
+    <section class="container" id="skill">
+        <!--<img src="img/uzu-icon.png" alt="ロゴ" width="25%" class="logo-img">-->
+        <div class="content-skill">
+        <div class="text">
+            <h1>SKILL</h1>
+            <h2>- 習得技術 -</h2>
+            <p>これまでに習得した技術を紹介します。</p>
+        </div>
+
+        <nav  class="skill-nav">
+            <details class="accordion-002">
+                <summary>HTML</summary>
+                <p>学習歴：4ヶ月<br>美しいデザインと使いやすいサイトを作成することに情熱を注いでいます。今後はCSSとJavaScriptにも挑戦し、より高度なウェブページを構築していきたいと考えています。</p>
+            </details>
+            <details class="accordion-002">
+                <summary>Illustrator</summary>
+                <p>学習歴：1年<br>デジタルツールの使い方にも慣れ、イラストを制作するためのテクニックを磨きました。幅広いテーマに挑戦し、自分自身のスタイルとアイデンティティを見つけることもできました。</p>
+            </details>
+            <details class="accordion-002">
+                <summary>swift</summary>
+                <p>学習歴：5ヶ月<br>iOSアプリやmacOSアプリを開発することを目標に情熱を注いでいます。現在はSwiftの基本構文やデータ型を習得し、Playgroundを活用して簡単なアプリを作成することに徐々に慣れてきました。</p>
+            </details>
+            <details class="accordion-002">
+                <summary>C言語</summary>
+                <p>学習歴：1年<br>1年間で、基本的な構文や制御構造をマスターし、関数やポインタなどの重要なコンセプトも理解してきました。現在では画像処理の授業でも活用しています。</p>
+            </details>
+            <details class="accordion-002">
+                <summary>PhotoShop</summary>
+                <p>学習歴：3ヶ月<br>Photoshopの基本的な操作やツールの使い方を習得しました。写真の修正や合成、テキストデザインなど、さまざまなクリエイティブなプロジェクトに取り組んできました。</p>
+            </details>
+            <details class="accordion-002">
+                <summary>MAYA</summary>
+                <p>学習歴：1年<br>MAYAの基本的な機能やツールを習得し、3Dモデリングやアニメーションの世界を作成してきました。MAYAの豊富な機能を活用して、立体的なキャラクターやシーンを作成する喜びを実感しています。</p>
+            </details>
+            <details class="accordion-002">
+                <summary>swift</summary>
+                
+            </details>
+        </nav>
+    </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <p>© 2023 OZEKI-portfolio</p>
+        
+    </footer>
+    
+
 </body>
 </html>
